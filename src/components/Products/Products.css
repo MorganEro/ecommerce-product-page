@@ -1,0 +1,35 @@
+h2.details__name {
+  font-size: 1.75rem;
+}
+
+.details__price .details__price--discount {
+  color: var(--clr-orange);
+  background-color: var(--clr-pale-orange);
+}
+
+.details__price .details__price--previous {
+  color: var(--clr-grayish-blue);
+}
+
+small.details__company {
+  color: var(--clr-orange);
+  letter-spacing: 1.85px;
+  font-size: 0.75rem;
+}
+
+p.details__description {
+  color: var(--clr-dark-grayish-blue);
+}
+
+/* -------------------MEDIA QUERIES------------------- */
+@media (min-width: 992px) {
+  h2.details__name {
+    font-size: 2.75rem;
+  }
+  .product-images {
+    padding: 0rem 3.75rem 1rem 0.625rem;
+  }
+  .product-details {
+    padding-left: 4rem;
+  }
+}
