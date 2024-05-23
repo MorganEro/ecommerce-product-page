@@ -2,6 +2,10 @@ a.carousel-control-next,
 a.carousel-control-prev {
   opacity: 1;
 }
+img.carousel-image {
+  width: 351px;
+  height: 351px;
+}
 
 .icon-arrow {
   background-color: var(--clr-white);
@@ -53,8 +57,17 @@ a.carousel-control-prev {
 @media (min-width: 992px) {
   img.carousel-image {
     object-fit: cover;
+    height: 351px;
+    width: 351px;
   }
   .carousel {
     padding-bottom: 2rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  img.carousel-image {
+    height: 454px;
+    width: 454px;
   }
 }

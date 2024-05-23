@@ -1,11 +1,11 @@
-import product1Image from '../../assets/images/image-product-1.jpg';
-import product1Thumbnail from '../../assets/images/image-product-1-thumbnail.jpg';
-import product2Image from '../../assets/images/image-product-2.jpg';
-import product2Thumbnail from '../../assets/images/image-product-2-thumbnail.jpg';
-import product3Image from '../../assets/images/image-product-3.jpg';
-import product3Thumbnail from '../../assets/images/image-product-3-thumbnail.jpg';
-import product4Image from '../../assets/images/image-product-4.jpg';
-import product4Thumbnail from '../../assets/images/image-product-4-thumbnail.jpg';
+import product1Image from '../../assets/images/image-product-1.webp';
+import product1Thumbnail from '../../assets/images/image-product-1-thumbnail.webp';
+import product2Image from '../../assets/images/image-product-2.webp';
+import product2Thumbnail from '../../assets/images/image-product-2-thumbnail.webp';
+import product3Image from '../../assets/images/image-product-3.webp';
+import product3Thumbnail from '../../assets/images/image-product-3-thumbnail.webp';
+import product4Image from '../../assets/images/image-product-4.webp';
+import product4Thumbnail from '../../assets/images/image-product-4-thumbnail.webp';
 
 export const PRODUCT_LIST = [
   {

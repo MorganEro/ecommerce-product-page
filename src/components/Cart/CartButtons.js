@@ -63,6 +63,8 @@ const CartButtons = ({ setCartArray, product }) => {
             <img
               src={iconMinus}
               alt="minus"
+              height="12"
+              width="4"
             />
           </Button>
           <Button
@@ -77,6 +79,8 @@ const CartButtons = ({ setCartArray, product }) => {
               className="ms-auto"
               src={iconPlus}
               alt="plus"
+              height="12"
+              width="12"
             />
           </Button>
         </ButtonGroup>

@@ -32,7 +32,8 @@ function Navigation({ handleShow, totalCartQuantity }) {
             src={menuIcon}
             alt="menu toggle Icon"
             className="d-inline-block align-center"
-            height="20"
+            height="15"
+            width="16"
           />
         </Navbar.Toggle>
         <Navbar.Brand
