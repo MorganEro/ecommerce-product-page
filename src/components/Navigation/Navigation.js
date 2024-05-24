@@ -45,7 +45,7 @@ function Navigation({ handleShow, totalCartQuantity }) {
             alt="Logo"
             className="d-inline-block pt-0 ps-1"
             height="20"
-            width="137.5"
+            width="138"
           />
         </Navbar.Brand>
 
@@ -71,7 +71,13 @@ function Navigation({ handleShow, totalCartQuantity }) {
           className="d-md-none">
           <Offcanvas.Header
             closeButton
-            className="d-block d-md-none"></Offcanvas.Header>
+            className="d-block d-md-none">
+            <h5
+              id="offcanvasNavbarLabel"
+              className="visually-hidden">
+              Offcanvas
+            </h5>
+          </Offcanvas.Header>
           <Offcanvas.Body>
             <Nav
               id="OffcanvasNavbar"
@@ -91,14 +97,13 @@ function Navigation({ handleShow, totalCartQuantity }) {
         </Navbar.Offcanvas>
         <Nav className="ms-auto flex-row align-items-center ">
           <button
-            href="#"
             className="cart-icon position-relative pe-3 pe-lg-4"
             onClick={handleShow}>
             <img
               src={cartIcon}
               alt="cart icon"
               className="d-inline-block align-center"
-              width="21.82"
+              width="22"
               height="20"
             />
             {totalCartQuantity > 0 && (
