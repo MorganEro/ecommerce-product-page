@@ -90,29 +90,26 @@ function Navigation({ handleShow, totalCartQuantity }) {
           </Offcanvas.Body>
         </Navbar.Offcanvas>
         <Nav className="ms-auto flex-row align-items-center ">
-          <Nav.Link
+          <button
             href="#"
-            className="pe-3 pe-lg-4">
-            <button
-              className="cart-icon position-relative"
-              onClick={handleShow}>
-              <img
-                src={cartIcon}
-                alt="cart icon"
-                className="d-inline-block align-center"
-                width="21.82"
-                height="20"
-              />
-              {totalCartQuantity > 0 && (
-                <Badge
-                  pill
-                  id="Cart-Quantity"
-                  className="position-absolute top-0 translate-middle">
-                  {totalCartQuantity}
-                </Badge>
-              )}
-            </button>
-          </Nav.Link>
+            className="cart-icon position-relative pe-3 pe-lg-4"
+            onClick={handleShow}>
+            <img
+              src={cartIcon}
+              alt="cart icon"
+              className="d-inline-block align-center"
+              width="21.82"
+              height="20"
+            />
+            {totalCartQuantity > 0 && (
+              <Badge
+                pill
+                id="Cart-Quantity"
+                className="position-absolute top-0 translate-middle">
+                {totalCartQuantity}
+              </Badge>
+            )}
+          </button>
           <Nav.Link
             eventKey={2}
             className="pe-0"

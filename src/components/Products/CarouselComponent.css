@@ -25,20 +25,20 @@ img.carousel-image {
   filter: invert(43%) sepia(92%) saturate(2779%) hue-rotate(9deg);
 }
 
-#Thumbnail-Image {
+.thumbnail-image {
   height: 88px;
   max-width: 88px;
   background-size: cover;
   background-position: center;
 }
 
-#Thumbnail-Image.active-thumbnail {
+.thumbnail-image.active-thumbnail {
   outline: 2px solid var(--clr-orange);
 }
 
-#Thumbnail-Image:hover::before,
-#Thumbnail-Image:focus::before,
-#Thumbnail-Image.active-thumbnail::before {
+.thumbnail-image:hover::before,
+.thumbnail-image:focus::before,
+.thumbnail-image.active-thumbnail::before {
   content: '';
   display: block;
   height: 100%;

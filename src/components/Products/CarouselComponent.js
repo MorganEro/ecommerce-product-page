@@ -45,7 +45,6 @@ function CarouselComponent({
             key={idx}
             className="carousel-thumbnail pe-0">
             <div
-              id="Thumbnail-Image"
               className={`thumbnail-image rounded-4 ${
                 idx === index ? 'active-thumbnail' : ''
               }`}

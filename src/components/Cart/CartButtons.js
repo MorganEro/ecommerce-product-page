@@ -49,6 +49,7 @@ const CartButtons = ({ setCartArray, product }) => {
   return (
     <>
       <Col
+        role="form"
         className="cart-quantity-column px-0"
         xs={12}
         lg={5}>
