@@ -6,7 +6,8 @@ import { Image } from 'react-bootstrap';
 import './CarouselComponent.css';
 
 function CarouselComponent({
-  products,
+  id,
+  product,
   index,
   handleSelect,
   handleImageClick,
@@ -17,45 +18,43 @@ function CarouselComponent({
   return (
     <>
       <Carousel
-        className="carousel"
+        id={id}
+        className="carousel px-0"
         indicators={false}
         activeIndex={index}
         onSelect={handleSelect}
         interval={null}
         nextIcon={nextIcon}
         prevIcon={prevIcon}>
-        {products.map(product => (
-          <Carousel.Item key={product.id}>
+        {product.images.map((img, idx) => (
+          <Carousel.Item key={idx}>
             <Image
               className="carousel-image d-block"
-              src={product.image}
+              src={img}
               alt={product.name}
               onClick={() => {
                 if (window.matchMedia('(min-width: 992px)').matches) {
-                  handleImageClick(product.image);
+                  handleImageClick(img);
                 }
               }}
             />
           </Carousel.Item>
         ))}
       </Carousel>
-      <Row className="thumbnails d-none d-lg-flex ">
-        {products.slice(0, 4).map((product, idx) => (
+      <Row className="thumbnails d-none d-lg-flex justify-content-between">
+        {product.imageThumbnails.slice(0, 4).map((thumbnail, idx) => (
           <Col
             key={idx}
-            className="carousel-thumbnail pe-0">
-            <div
-              className={`thumbnail-image rounded-4 ${
-                idx === index ? 'active-thumbnail' : ''
-              }`}
-              onClick={() => handleThumbnailClick(idx)}
-              style={{
-                backgroundImage: `url(${product.imageThumbnail})`,
-                cursor: 'pointer',
-                width: '100%',
-              }}
-            />
-          </Col>
+            className={`carousel-thumbnail thumbnail-image rounded-4 px-0 ${
+              idx === index ? 'active-thumbnail' : ''
+            }`}
+            onClick={() => handleThumbnailClick(idx)}
+            style={{
+              backgroundImage: `url(${thumbnail})`,
+              cursor: 'pointer',
+              width: '100%',
+            }}
+          />
         ))}
       </Row>
     </>

@@ -1,6 +1,10 @@
 .fade.modal-backdrop.show {
   opacity: 0;
 }
+.lightbox-modal__dialog > div .carousel-inner .active img.carousel-image {
+  width: 550px;
+  height: 550px;
+}
 
 .lightbox-modal__header button.btn-close {
   opacity: 1;
@@ -35,7 +39,9 @@
   .fade.modal-backdrop.show {
     opacity: 0.7;
   }
+}
 
+@media (min-width: 1440px) {
   .lightbox-modal__dialog > div .carousel-inner .active img.carousel-image {
     width: 550px;
     height: 550px;

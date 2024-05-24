@@ -3,8 +3,8 @@ a.carousel-control-prev {
   opacity: 1;
 }
 img.carousel-image {
-  width: 351px;
-  height: 351px;
+  min-width: 351px;
+  height: auto;
 }
 
 .icon-arrow {
@@ -57,17 +57,20 @@ img.carousel-image {
 @media (min-width: 992px) {
   img.carousel-image {
     object-fit: cover;
-    height: 351px;
-    width: 351px;
   }
   .carousel {
     padding-bottom: 2rem;
   }
+  .thumbnails {
+    padding-inline: 0.6rem;
+  }
 }
-
 @media (min-width: 1440px) {
-  img.carousel-image {
+  #Products-Carousel img.carousel-image {
     height: 454px;
     width: 454px;
+  }
+  .thumbnails {
+    padding-inline: 0.8rem 4rem;
   }
 }

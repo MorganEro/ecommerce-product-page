@@ -28,7 +28,7 @@ const prevIcon = (
 function Lightbox({
   show,
   onHide,
-  products,
+  product,
   index,
   handleSelect,
   handleImageClick,
@@ -49,7 +49,8 @@ function Lightbox({
       />
       <Modal.Body className="lightbox-modal__body p-0 ">
         <CarouselComponent
-          products={products}
+          id="Lightbox-Carousel"
+          product={product}
           index={index}
           handleSelect={handleSelect}
           handleImageClick={handleImageClick}

@@ -23,7 +23,8 @@ const CartModal = ({
       show={show}
       onHide={handleClose}
       dialogClassName="modal-styling"
-      aria-labelledby="Cart-contents-modal">
+      aria-labelledby="Cart-contents-modal"
+      backdrop={false}>
       <Modal.Header closeButton>
         <Modal.Title
           id="Cart-contents-modal"
@@ -48,7 +49,7 @@ const CartModal = ({
                   className="ps-1 pe-0">
                   <Image
                     rounded
-                    src={cartProduct.imageThumbnail}
+                    src={cartProduct.imageThumbnails[0]}
                     alt="product"
                   />
                 </Col>

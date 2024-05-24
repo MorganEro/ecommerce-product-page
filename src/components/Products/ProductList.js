@@ -12,8 +12,13 @@ export const PRODUCT_LIST = [
     id: 1,
     name: 'Fall Limited Edition Sneakers',
     price: 125.0,
-    image: product1Image,
-    imageThumbnail: product1Thumbnail,
+    images: [product1Image, product2Image, product3Image, product4Image],
+    imageThumbnails: [
+      product1Thumbnail,
+      product2Thumbnail,
+      product3Thumbnail,
+      product4Thumbnail,
+    ],
     description:
       'These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.',
   },
@@ -21,8 +26,13 @@ export const PRODUCT_LIST = [
     id: 2,
     name: 'Spring Limited Edition Sneakers',
     price: 150.0,
-    image: product2Image,
-    imageThumbnail: product2Thumbnail,
+    images: [product1Image, product2Image, product3Image, product4Image],
+    imageThumbnails: [
+      product1Thumbnail,
+      product2Thumbnail,
+      product3Thumbnail,
+      product4Thumbnail,
+    ],
     description:
       'These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.',
   },
@@ -30,8 +40,13 @@ export const PRODUCT_LIST = [
     id: 3,
     name: 'Summer Limited Edition Sneakers',
     price: 175.0,
-    image: product3Image,
-    imageThumbnail: product3Thumbnail,
+    images: [product1Image, product2Image, product3Image, product4Image],
+    imageThumbnails: [
+      product1Thumbnail,
+      product2Thumbnail,
+      product3Thumbnail,
+      product4Thumbnail,
+    ],
     description:
       'These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.',
   },
@@ -39,8 +54,13 @@ export const PRODUCT_LIST = [
     id: 4,
     name: 'Winter Limited Edition Sneakers',
     price: 200.0,
-    image: product4Image,
-    imageThumbnail: product4Thumbnail,
+    images: [product1Image, product2Image, product3Image, product4Image],
+    imageThumbnails: [
+      product1Thumbnail,
+      product2Thumbnail,
+      product3Thumbnail,
+      product4Thumbnail,
+    ],
     description:
       'These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.',
   },

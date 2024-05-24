@@ -64,8 +64,8 @@ const CartButtons = ({ setCartArray, product }) => {
             <img
               src={iconMinus}
               alt="minus"
-              height="12"
-              width="4"
+              height="4"
+              width="12"
             />
           </Button>
           <Button

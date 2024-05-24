@@ -2,6 +2,12 @@ section#main {
   padding-bottom: 88px;
 }
 
+@media (min-width: 768px) {
+  section#main {
+    padding-top: 60px;
+  }
+}
+
 @media (min-width: 992px) {
   .App .container {
     padding-inline: 70px;
@@ -25,5 +31,8 @@ section#main {
 @media (min-width: 1440px) {
   .App .container {
     padding-inline: 100px;
+  }
+  section#main {
+    padding-inline: 20px;
   }
 }
